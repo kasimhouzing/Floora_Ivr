@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'tabler-icons';
+  src: url('../fonts/tabler-iconsd41d.woff') format('woff'),
+       url('../fonts/tabler-icons8aff.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
