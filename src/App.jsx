@@ -21,6 +21,7 @@ import ActiveProperties from './components/dashboard/ActiveProperties';
 // Import your global styles
 import './index.css';
 import { LogIn } from 'lucide-react';
+import FlooraAIChat from './components/dashboard/FlooraAIChat.jsx';
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
         <Route path="/old-properties" element={<OldProperties />} />
         <Route path="/add-property" element={<AddProperty />} />
         <Route path="/active-properties" element={<ActiveProperties />} />
+        <Route path="/floorai" element={<FlooraAIChat />} />
+
       </Routes>
     </BrowserRouter>
   );

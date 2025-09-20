@@ -699,7 +699,7 @@ const Dashboard = () => {
               </li>
               <li className="side-nav-item" style={{ marginBottom: "0.5rem" }}>
                 <a
-                  href="floora-ai.html"
+                  href="/floorai"
                   className="side-nav-link"
                   style={{
                     display: "flex",
