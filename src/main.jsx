@@ -4,6 +4,7 @@ import './index.css'
 import './assets/css/vendors.min.css';
 import './assets/css/app.min.css';
 import './assets/css/fonts.css'; // Add this line
+
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(

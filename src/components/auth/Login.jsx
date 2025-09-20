@@ -41,7 +41,7 @@ const Login = () => {
                   </a>
                 </div>
 
-                <form>
+                <form action="/dashboard">
                   <div className="mb-3">
                     <label htmlFor="userEmail" className="form-label">
                       Email address
