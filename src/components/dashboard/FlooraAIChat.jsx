@@ -1,136 +1,158 @@
 import React from 'react';
+import Layout from '../../Layout';
 
-const FlooraAIChat = () => {
+const FlooraAiChat = () => {
   return (
-    <>
-      <div className="wrapper">
-        <header className="app-topbar">
-          <div className="container-fluid topbar-menu">
-            <div className="d-flex align-items-center justify-content-center gap-2">
-              <div className="logo-topbar">
-                <a href="index.html" className="logo-dark">
-                  <span className="d-flex align-items-center gap-1">
-                    <span className="avatar avatar-xs rounded-circle text-bg-dark">
-                      <span className="avatar-title">
-                        <i className="ti ti-sparkles fs-md"></i>
-                      </span>
-                    </span>
-                    <span className="logo-text text-body fw-bold fs-xl">Floora IVR</span>
-                  </span>
-                </a>
-                <a href="index.html" className="logo-light">
-                  <span className="d-flex align-items-center gap-1">
-                    <span className="avatar avatar-xs rounded-circle text-bg-dark">
-                      <span className="avatar-title">
-                        <i className="ti ti-sparkles fs-md"></i>
-                      </span>
-                    </span>
-                    <span className="logo-text text-white fw-bold fs-xl">Floora IVR</span>
-                  </span>
-                </a>
-              </div>
-              <ul className="navbar-nav gap-2 align-items-center">
-                <li className="nav-item">
-                  <a className="btn btn-sm btn-light-success d-flex align-items-center gap-1 py-1 px-2 shadow-none" href="dashboard.html">
-                    <i className="ti ti-arrow-left fs-md"></i>
-                    Back to Dashboard
-                  </a>
+    <Layout>
+      <div className="row">
+        <div className="col-12">
+          <div className="page-title-box d-flex align-items-center justify-content-between">
+            <h4 className="page-title">Floora AI Chat</h4>
+            <div className="page-title-right d-none d-sm-flex">
+              <ol className="breadcrumb m-0">
+                <li className="breadcrumb-item">
+                  <a href="javascript: void(0);">Floora IVR</a>
                 </li>
-              </ul>
+                <li className="breadcrumb-item active">Floora AI Chat</li>
+              </ol>
             </div>
           </div>
-        </header>
-
-        <div className="content-page">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-12">
-                <div className="card">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center mb-4">
-                      <div className="d-flex align-items-center gap-2">
-                        <span className="avatar avatar-md rounded-circle bg-gray-900 text-white">
-                          <span className="avatar-title">
-                            <i className="ti ti-sparkles fs-2xl"></i>
-                          </span>
-                        </span>
-                        <div>
-                          <h4 className="fw-semibold fs-sm mb-1">Floora IVR AI</h4>
-                          <h6 className="text-muted fw-normal m-0">
-                            Status: <span className="text-success">Active</span>
-                          </h6>
-                        </div>
-                      </div>
-                      <div className="d-flex align-items-center">
-                        <span className="badge bg-primary-subtle text-primary">
-                          <i className="ti ti-phone-plus fs-md me-1"></i>
-                          30 mins
-                        </span>
-                      </div>
-                    </div>
-                    <div className="chat-container-inner" style={{ minHeight: '60vh' }}>
-                      <div className="chat-box">
-                        <div className="chat-start">
-                          <div className="chat-bubble">
-                            Hi, I'm Floora IVR, your personal AI real estate agent. How can I help you today?
-                          </div>
-                        </div>
-                        <div className="chat-end">
-                          <div className="chat-bubble">
-                            I want to talk about a new property.
-                          </div>
-                        </div>
-                        <div className="chat-start">
-                          <div className="chat-bubble">
-                            Okay, I'm listening. What do you want to talk about?
-                          </div>
-                        </div>
-                        <div className="chat-end">
-                          <div className="chat-bubble">
-                            I have a new property in downtown Miami, it’s a 3-bedroom, 2-bathroom apartment.
-                          </div>
-                        </div>
-                        <div className="chat-start">
-                          <div className="chat-bubble">
-                            That sounds like a great property! What's the price?
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card-footer">
-                    <div className="d-flex align-items-center gap-2">
-                      <input type="text" className="form-control" placeholder="Type your message here..." />
-                      <button className="btn btn-dark">
-                        <i className="ti ti-microphone fs-xl"></i>
-                      </button>
-                      <button className="btn btn-primary">
-                        <i className="ti ti-send fs-xl"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <footer className="footer">
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col-md-6 text-center text-md-start">
-                  © {new Date().getFullYear()} <span className="fw-semibold">Floora AI</span>
-                </div>
-                <div className="col-md-6">
-                  <div className="text-md-end d-none d-md-block">
-                    Minutes Left <span className="fw-bold">689</span> Recharge Now.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
         </div>
       </div>
-    </>
+
+      <div className="row">
+        <div className="col-xxl-9 col-lg-8">
+          <div className="card d-flex flex-column h-100">
+            <div className="card-body">
+              <div className="d-flex justify-content-between align-items-center mb-4">
+                <h4 className="header-title mb-0">Chat</h4>
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-light">
+                    <i className="ti ti-share fs-20"></i>
+                  </button>
+                  <button type="button" className="btn btn-sm btn-light">
+                    <i className="ti ti-download fs-20"></i>
+                  </button>
+                  <button type="button" className="btn btn-sm btn-light">
+                    <i className="ti ti-printer fs-20"></i>
+                  </button>
+                  <button type="button" className="btn btn-sm btn-light">
+                    <i className="ti ti-trash fs-20"></i>
+                  </button>
+                </div>
+              </div>
+              <div className="chat-content overflow-y-scroll" style={{ height: '70vh' }}>
+                <div className="d-flex align-items-end mb-4">
+                  <div className="flex-shrink-0 me-2">
+                    <span className="avatar avatar-sm rounded-circle text-bg-light">
+                      <span className="avatar-title rounded-circle">
+                        <i className="ti ti-robot fs-20"></i>
+                      </span>
+                    </span>
+                  </div>
+                  <div className="flex-grow-1">
+                    <div className="w-fit-content card card-body mb-0 px-3 py-2 border-0 bg-primary-subtle shadow-none">
+                      <p className="mb-0 text-primary">Hello, how can I help you today?</p>
+                    </div>
+                    <span className="fs-12 text-muted fw-normal">10:00 AM</span>
+                  </div>
+                </div>
+
+                <div className="d-flex align-items-end flex-row-reverse mb-4">
+                  <div className="flex-shrink-0 ms-2">
+                    <span className="avatar avatar-sm rounded-circle text-bg-light">
+                      <span className="avatar-title rounded-circle">
+                        <i className="ti ti-user fs-20"></i>
+                      </span>
+                    </span>
+                  </div>
+                  <div className="flex-grow-1 text-end">
+                    <div className="w-fit-content d-inline-block card card-body mb-0 px-3 py-2 border-0 bg-light-subtle shadow-none">
+                      <p className="mb-0 text-body-secondary">What are my active properties?</p>
+                    </div>
+                    <span className="fs-12 text-muted fw-normal">10:00 AM</span>
+                  </div>
+                </div>
+
+                <div className="d-flex align-items-end mb-4">
+                  <div className="flex-shrink-0 me-2">
+                    <span className="avatar avatar-sm rounded-circle text-bg-light">
+                      <span className="avatar-title rounded-circle">
+                        <i className="ti ti-robot fs-20"></i>
+                      </span>
+                    </span>
+                  </div>
+                  <div className="flex-grow-1">
+                    <div className="w-fit-content card card-body mb-0 px-3 py-2 border-0 bg-primary-subtle shadow-none">
+                      <p className="mb-0 text-primary">You have 2 active properties: Property One and Property Two.</p>
+                    </div>
+                    <span className="fs-12 text-muted fw-normal">10:01 AM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card-footer py-3 border-top border-light-subtle">
+              <div className="input-group">
+                <input
+                  type="text"
+                  className="form-control form-control-light border-0"
+                  placeholder="Ask me anything..."
+                  aria-label="Ask me anything"
+                />
+                <button className="btn btn-primary" type="button">
+                  <i className="ti ti-send"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-xxl-3 col-lg-4">
+          <div className="card d-flex flex-column h-100">
+            <div className="card-header border-bottom border-light-subtle">
+              <h4 className="header-title mb-0">Summary</h4>
+            </div>
+            <div className="card-body">
+              <div className="mb-3">
+                <h5 className="fs-14 fw-bold">Daily Report</h5>
+                <p className="text-muted mb-0">
+                  <i className="ti ti-check text-success me-1"></i> Yesterday, 25 new inquiries were handled.
+                </p>
+                <p className="text-muted mb-0">
+                  <i className="ti ti-check text-success me-1"></i> 5 new properties were added.
+                </p>
+              </div>
+
+              <div className="mb-3">
+                <h5 className="fs-14 fw-bold">Notifications</h5>
+                <p className="text-muted mb-0">
+                  <i className="ti ti-bell-ring-2 text-warning me-1"></i> You have a new message from a lead.
+                </p>
+                <p className="text-muted mb-0">
+                  <i className="ti ti-alert-circle text-danger me-1"></i> A call to property "123 Main St" failed to connect.
+                </p>
+              </div>
+
+              <div className="mb-3">
+                <h5 className="fs-14 fw-bold">Contact Person</h5>
+                <div className="d-flex align-items-center mt-2">
+                  <img
+                    src="https://via.placeholder.com/48x48.png?text=User"
+                    alt="Contact Person"
+                    className="rounded-circle avatar-sm"
+                  />
+                  <div className="ms-2">
+                    <h5 className="mb-0 fs-15">John Doe</h5>
+                    <p className="text-muted mb-0 fs-13">Support Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout>
   );
 };
 
-export default FlooraAIChat;
+export default FlooraAiChat;
